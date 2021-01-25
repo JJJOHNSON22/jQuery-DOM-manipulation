@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //The two functions have identical functionality.
+            //The function that is commented out is raw JavaScript while 
+            //the other is jQuery.
+            //
+            //var btn = document.getElementById("btn");
+            //btn.addEventListener("click", function() {
+            //    var pTag = document.getElementById('p1');
+            //    pTag.style.backgroundColor = "green";
+            $("#btn").click(function() {
+                var pTag = $("#p1");
+                pTag.css("backgroundColor", "green");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p id="p1">some words for reading</p>
+    <button id="btn">Do Stuff</button>
+</body>
+
+</html>
